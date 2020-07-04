@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sign_In_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y2P-73-OnU">
+                                <rect key="frame" x="10" y="138" width="394" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baI-IX-rf8">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                                        <color key="textColor" red="0.49803921568627452" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTz-k7-pvS">
+                                        <rect key="frame" x="0.0" y="19.5" width="394" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Idj-DD-gzJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNV-QB-zet">
+                                        <rect key="frame" x="0.0" y="69.5" width="394" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxz-xY-FQT">
+                                        <rect key="frame" x="0.0" y="103.5" width="394" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                                        <color key="textColor" red="0.49803921569999998" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siD-eI-XBK">
+                                        <rect key="frame" x="0.0" y="123" width="394" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tHV-Em-qBM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13C-C0-o6M">
+                                        <rect key="frame" x="0.0" y="173" width="394" height="18"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dX-yO-7i6">
+                                        <rect key="frame" x="0.0" y="191" width="394" height="49"/>
+                                        <color key="backgroundColor" red="0.8784313725490196" green="0.88627450980392153" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="uIx-x7-YUD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="17"/>
+                                        <color key="tintColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sign In"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zxz-xY-FQT" firstAttribute="top" secondItem="y2P-73-OnU" secondAttribute="top" constant="103.5" id="vWh-pY-GeK"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwE-9Z-vpJ">
+                                <rect key="frame" x="100" y="650" width="214" height="40"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18o-6b-4CI">
+                                <rect key="frame" x="117" y="709" width="180" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="pdo-oP-ETU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                                <state key="normal" title="Reset Password">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crow ©" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-wK-gns">
+                                <rect key="frame" x="100" y="778.5" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-XB-pwr">
+                                <rect key="frame" x="291.5" y="104" width="52.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AJI-h6-ytD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="18"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O0A-VS-mf0">
+                                <rect key="frame" x="158" y="569" width="98" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpl-lR-xaF">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="AMB-10-zvO"/>
+                                            <constraint firstAttribute="width" constant="44" id="NVV-cQ-HEb"/>
+                                        </constraints>
+                                        <state key="normal" image="apple"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlV-UW-sPi">
+                                        <rect key="frame" x="54" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="aVr-eS-rSz"/>
+                                            <constraint firstAttribute="height" constant="44" id="g6W-zV-hh4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="google"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign in with:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-OT-g2e">
+                                <rect key="frame" x="120" y="496" width="177" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="OyI-de-yFL"/>
+                                    <constraint firstAttribute="height" constant="47" id="XFX-Qq-LJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="14"/>
+                                <color key="textColor" red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="0.7122675421779141" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y2P-73-OnU" firstAttribute="centerX" secondItem="O0A-VS-mf0" secondAttribute="centerX" id="0Wh-0G-EXf"/>
+                            <constraint firstAttribute="bottom" secondItem="dkN-OT-g2e" secondAttribute="bottom" constant="353" id="1gZ-9K-6TM"/>
+                            <constraint firstItem="DwE-9Z-vpJ" firstAttribute="centerX" secondItem="O0A-VS-mf0" secondAttribute="centerX" id="223-XE-004"/>
+                            <constraint firstAttribute="bottom" secondItem="y2P-73-OnU" secondAttribute="bottom" constant="518" id="4pg-eO-K2f"/>
+                            <constraint firstItem="18o-6b-4CI" firstAttribute="top" secondItem="DwE-9Z-vpJ" secondAttribute="bottom" constant="19" id="5t5-vC-ruP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkN-OT-g2e" secondAttribute="trailing" constant="117" id="FEj-6P-60F"/>
+                            <constraint firstItem="dkN-OT-g2e" firstAttribute="trailing" secondItem="18o-6b-4CI" secondAttribute="trailing" id="J2P-K2-ZlE"/>
+                            <constraint firstItem="DwE-9Z-vpJ" firstAttribute="top" secondItem="O0A-VS-mf0" secondAttribute="bottom" constant="37" id="MNa-X0-hbg"/>
+                            <constraint firstItem="vgt-XB-pwr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="UEN-Ks-ocg"/>
+                            <constraint firstItem="DwE-9Z-vpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="UcO-X7-9S7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uhA-wK-gns" secondAttribute="bottom" constant="63" id="ZVE-0I-lgs"/>
+                            <constraint firstItem="y2P-73-OnU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="axO-Wh-2tL"/>
+                            <constraint firstItem="dkN-OT-g2e" firstAttribute="leading" secondItem="y2P-73-OnU" secondAttribute="trailing" constant="-284" id="bro-Vp-7sR"/>
+                            <constraint firstItem="uhA-wK-gns" firstAttribute="top" secondItem="18o-6b-4CI" secondAttribute="bottom" constant="36.5" id="eHo-WF-J8B"/>
+                            <constraint firstItem="DwE-9Z-vpJ" firstAttribute="leading" secondItem="uhA-wK-gns" secondAttribute="leading" id="efk-LK-ujI"/>
+                            <constraint firstItem="DwE-9Z-vpJ" firstAttribute="trailing" secondItem="uhA-wK-gns" secondAttribute="trailing" id="etO-Ym-UUW"/>
+                            <constraint firstItem="O0A-VS-mf0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="htY-3x-2r9"/>
+                            <constraint firstItem="O0A-VS-mf0" firstAttribute="top" secondItem="dkN-OT-g2e" secondAttribute="bottom" constant="26" id="ka5-VG-IKZ"/>
+                            <constraint firstItem="dkN-OT-g2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="qB7-YS-Ixr"/>
+                            <constraint firstItem="18o-6b-4CI" firstAttribute="centerX" secondItem="uhA-wK-gns" secondAttribute="centerX" id="vFd-Ua-fkk"/>
+                            <constraint firstItem="vgt-XB-pwr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="291.5" id="vby-xv-lrk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="signIn" destination="8bC-Xf-vdC" id="Q4P-wM-Mtq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="88" height="88"/>
+        <image name="google" width="88" height="88"/>
+    </resources>
 </document>

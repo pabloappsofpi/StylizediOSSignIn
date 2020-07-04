@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6424580A24AFFD6B00ED446B /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 6424580924AFFD6B00ED446B /* google.png */; };
 		646FE2F624AFDFD800FD3C3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FE2F524AFDFD800FD3C3E /* AppDelegate.swift */; };
 		646FE2F824AFDFD800FD3C3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FE2F724AFDFD800FD3C3E /* SceneDelegate.swift */; };
 		646FE2FA24AFDFD800FD3C3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FE2F924AFDFD800FD3C3E /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6424580924AFFD6B00ED446B /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
 		646FE2F224AFDFD800FD3C3E /* Sign In iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sign In iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		646FE2F524AFDFD800FD3C3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		646FE2F724AFDFD800FD3C3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		646FE31324AFDFDD00FD3C3E /* Sign In iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sign In iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		646FE31724AFDFDD00FD3C3E /* Sign_In_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_In_iOSUITests.swift; sourceTree = "<group>"; };
 		646FE31924AFDFDD00FD3C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646FE32624AFF7EB00FD3C3E /* SanFranciscoDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Regular.otf"; path = "../../../../../Downloads/SanFranciscoFont-master 2/SanFranciscoDisplay-Regular.otf"; sourceTree = "<group>"; };
+		646FE32824AFF83700FD3C3E /* SanFranciscoText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Bold.otf"; sourceTree = "<group>"; };
+		646FE32924AFF85800FD3C3E /* SanFranciscoDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Semibold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +104,13 @@
 		646FE2F424AFDFD800FD3C3E /* Sign In iOS */ = {
 			isa = PBXGroup;
 			children = (
+				646FE32524AFF7B100FD3C3E /* fonts */,
 				646FE2F524AFDFD800FD3C3E /* AppDelegate.swift */,
 				646FE2F724AFDFD800FD3C3E /* SceneDelegate.swift */,
 				646FE2F924AFDFD800FD3C3E /* ViewController.swift */,
 				646FE2FB24AFDFD800FD3C3E /* Main.storyboard */,
 				646FE2FE24AFDFDD00FD3C3E /* Assets.xcassets */,
+				6424580924AFFD6B00ED446B /* google.png */,
 				646FE30024AFDFDD00FD3C3E /* LaunchScreen.storyboard */,
 				646FE30324AFDFDD00FD3C3E /* Info.plist */,
 			);
@@ -126,6 +133,16 @@
 				646FE31924AFDFDD00FD3C3E /* Info.plist */,
 			);
 			path = "Sign In iOSUITests";
+			sourceTree = "<group>";
+		};
+		646FE32524AFF7B100FD3C3E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				646FE32624AFF7EB00FD3C3E /* SanFranciscoDisplay-Regular.otf */,
+				646FE32924AFF85800FD3C3E /* SanFranciscoDisplay-Semibold.otf */,
+				646FE32824AFF83700FD3C3E /* SanFranciscoText-Bold.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 			files = (
 				646FE30224AFDFDD00FD3C3E /* LaunchScreen.storyboard in Resources */,
 				646FE2FF24AFDFDD00FD3C3E /* Assets.xcassets in Resources */,
+				6424580A24AFFD6B00ED446B /* google.png in Resources */,
 				646FE2FD24AFDFD800FD3C3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
